@@ -1,13 +1,23 @@
 import React from 'react';
 
-export default function MonsterList({ filterMonsters }) {
+export default function MonsterList({ monsters }) {
   return (
     <>
-      <div>
-        {filterMonsters.map((monsters) => (
-          <p key={monsters.id}>{monsters.monsters}</p>
-        ))}
-      </div>
+      {monsters.map((m) => {
+        <div key={m.id}>
+          <h1>{m.name}</h1>
+        </div>;
+      })}
     </>
   );
+}
+
+{
+  /* <div className="List">
+{monsters.map((monster) => (
+  <p className="mon" key={monster.id}>
+    {monster.mon}
+  </p>
+))}
+</div> */
 }
