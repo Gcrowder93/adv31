@@ -16,8 +16,10 @@ export default function MonsterDetails({ monsters }) {
           <p>
             <img src={monsters.image}></img>
           </p>
+          <b>Common Locations:</b>
           <p>{monsters.common_locations}</p>
           <p>{monsters.description}</p>
+          <b>Possible Loot:</b>
           <p>{monsters.drops}</p>
           <hr></hr>
         </ul>

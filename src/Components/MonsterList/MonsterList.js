@@ -10,7 +10,7 @@ export default function MonsterList({ monsters }) {
         <a href="/">Back To Home</a>
       </header>
       <h1> -List of Monsters-</h1>
-      <h3> -click an image to learn more-</h3>
+      <h3> -click an image to learn more- </h3>
       {monsters.data.map((monster) => (
         <ul key={monster.id}>
           <p>
