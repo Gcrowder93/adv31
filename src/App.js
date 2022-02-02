@@ -15,7 +15,6 @@ function App() {
     const fetchData = async () => {
       const monsterData = await getMonsters();
       setMonster(monsterData);
-      console.log(monsterData);
       setLoading(false);
     };
 
@@ -37,9 +36,6 @@ function App() {
           <Route path="/DetailView/:id">
             <DetailView />
           </Route>
-          {/* <Route path="/monsterdetails">
-            <MonsterDetails {...{ monsters }} />
-          </Route> */}
         </Switch>
       </BrowserRouter>
     </div>

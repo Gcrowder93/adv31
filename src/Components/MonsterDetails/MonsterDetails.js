@@ -1,10 +1,13 @@
 import React from 'react';
 
 export default function MonsterDetails({ monsters }) {
-  console.log(monsters);
   return (
     <div>
       <div>
+        <header>
+          <br></br>
+          <a href="/">Back To Home</a>
+        </header>
         <h1> -Monster Details-</h1>
         <ul>
           <p>
@@ -18,9 +21,7 @@ export default function MonsterDetails({ monsters }) {
           <p>{monsters.drops}</p>
           <hr></hr>
         </ul>
-        )
       </div>
-      );
     </div>
   );
 }

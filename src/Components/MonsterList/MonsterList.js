@@ -3,10 +3,13 @@ import './monsterlist.css';
 import { Link } from 'react-router-dom';
 
 export default function MonsterList({ monsters }) {
-  console.log(monsters);
   return (
     <div>
-      <h1 className="h1"> -List of Monsters-</h1>
+      <header>
+        <br></br>
+        <a href="/">Back To Home</a>
+      </header>
+      <h1> -List of Monsters-</h1>
       {monsters.data.map((monster) => (
         <ul key={monster.id}>
           <p>
@@ -17,12 +20,12 @@ export default function MonsterList({ monsters }) {
               <img src={monster.image}></img>
             </Link>
           </p>
-          {/* <li>{monster.common_locations}</li>
-          <li>{monster.description}</li>
-          <li>{monster.drops}</li> */}
           <hr></hr>
         </ul>
       ))}
+      <a className="homebtn" href="/">
+        Back To Home
+      </a>
     </div>
   );
 }

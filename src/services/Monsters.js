@@ -5,9 +5,7 @@ export async function getMonsters() {
 }
 
 export async function getMonstersById(id) {
-  const response = await fetch(
-    `https://botw-compendium.herokuapp.com/api/v2/category/monsters/${id}`
-  );
+  const response = await fetch(`https://botw-compendium.herokuapp.com/api/v2/entry/${id}`);
   const monsterData = await response.json();
-  return monsterData[0];
+  return monsterData.data;
 }
