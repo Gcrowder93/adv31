@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import MonsterList from '../Components/MonsterList/MonsterList';
+import './HomeView.css';
+import zelda from './img/zelda.png';
 
 export default function HomeView() {
   return (
-    <div>
-      <header>This is a compendium for Breath of the Wild Monsters.</header>
-      <h2>Click the link below to view a list of all Monsters in BOTW.</h2>
-      {/* <a href="/MonsterList">Monster List</a> */}
-      {/* <Link to={'MonsterList'}>Monster List</Link> */}
-      <Link to="/MonsterList">Monster List</Link>
-
-      <h3>Click on an image to learn more about that monster.</h3>
-      <h4>Things like its Common Location, what it Drops, etc.</h4>
+    <div className="home">
+      <header className="header">This is a compendium for Breath of the Wild Monsters.</header>
+      <h2 className="h2home">Click the link below to view a list of all Monsters in BOTW.</h2>
+      <Link className="monsterhome" to="/MonsterList">
+        Monster List
+      </Link>
+      <br></br>
+      <img src={zelda} className="imghome"></img>
+      <h3 className="h3home">Click on an image to learn more about that monster.</h3>
     </div>
   );
 }

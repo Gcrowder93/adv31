@@ -1,0 +1,33 @@
+.header {
+  margin-top: 10px;
+  text-shadow: 1px 2px 1px plum;
+}
+
+.monsterhome {
+  font-size: 35px;
+  text-shadow: 1px 2px 1px black;
+}
+
+.monsterhome:hover {
+  opacity: 50%;
+}
+
+.monsterhome:visited {
+  color: plum;
+  text-shadow: 1px 2px 1px black;
+}
+
+.imghome {
+  margin-top: 10px;
+  height: 400px;
+  width: 650px;
+}
+
+.h2home {
+  text-shadow: 1px 1px 1px plum;
+}
+
+.h3home {
+  text-shadow: 1px 1px 1px plum;
+  text-decoration: underline;
+}
