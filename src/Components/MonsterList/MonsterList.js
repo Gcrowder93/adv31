@@ -24,10 +24,6 @@ export default function MonsterList({ monsters }) {
         </ul>
       ))}
       <Link to="/">Back to Home</Link>
-
-      {/* <a className="homebtn" href="/">
-        Back To Home
-      </a> */}
     </div>
   );
 }
