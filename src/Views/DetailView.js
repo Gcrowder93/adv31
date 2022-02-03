@@ -21,11 +21,6 @@ export default function DetailView() {
     fetchData();
   }, [id]);
 
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-  //     history.push('/');
-  //   };
-
   if (loading) return <p>Loading..</p>;
 
   return (
