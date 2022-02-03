@@ -5,7 +5,6 @@ import { getMonsters } from './services/Monsters';
 import MonsterList from './Components/MonsterList/MonsterList';
 import HomeView from './Views/HomeView';
 import DetailView from './Views/DetailView';
-// import MonsterDetails from './Components/MonsterDetails/MonsterDetails';
 
 function App() {
   const [monsters, setMonster] = useState([]);
@@ -28,7 +27,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <HomeView />
-            {/* <MonsterList {...{ monsters }} /> */}
           </Route>
           <Route path="/monsterlist">
             <MonsterList {...{ monsters }} />

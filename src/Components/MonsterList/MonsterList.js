@@ -1,5 +1,4 @@
 import React from 'react';
-import './monsterlist.css';
 import { Link } from 'react-router-dom';
 
 export default function MonsterList({ monsters }) {
@@ -24,9 +23,11 @@ export default function MonsterList({ monsters }) {
           <hr></hr>
         </ul>
       ))}
-      <a className="homebtn" href="/">
+      <Link to="/">Back to Home</Link>
+
+      {/* <a className="homebtn" href="/">
         Back To Home
-      </a>
+      </a> */}
     </div>
   );
 }
