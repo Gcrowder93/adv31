@@ -9,8 +9,8 @@ export default function MonsterDetails({ monsters }) {
       <div>
         <header>
           <br></br>
-          <Link className="homelink" to="/">
-            Back to Home
+          <Link className="homelink" to="/MonsterList">
+            Back to Monster List
           </Link>
         </header>
         <h1 className="h12">
@@ -26,10 +26,7 @@ export default function MonsterDetails({ monsters }) {
             <h2 className="h22">
               <b>Common Locations:</b>
             </h2>
-            <p>{monsters.common_locations[0]}</p>
-            <p>{monsters.common_locations[1]}</p>
-            <p>{monsters.common_locations[2]}</p>_<p>{monsters.common_locations[3]}</p>
-            <p>{monsters.common_locations[4]}</p>
+            <p> {monsters.common_locations} </p>
             <h2 className="h22">Description:</h2>
             <p>{monsters.description}</p>
             <h2 className="h22">
