@@ -1,29 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './MonsterList.css';
+
 export default function MonsterList({ monsters }) {
   return (
-    <div>
+    <div className="page">
       <header>
         <br></br>
-        <a href="/">Back To Home</a>
+        <Link className="homelink" to="/">
+          Back to Home
+        </Link>
       </header>
-      <h1> -List of Monsters-</h1>
-      <h3> -click an image to learn more- </h3>
-      {monsters.data.map((monster) => (
-        <ul key={monster.id}>
-          <p>
-            <b>{monster.name.toUpperCase()}</b>
-          </p>
-          <p>
-            <Link to={`/DetailView/${monster.id}`}>
-              <img src={monster.image}></img>
-            </Link>
-          </p>
-          <hr></hr>
-        </ul>
-      ))}
-      <Link to="/">Back to Home</Link>
+      <h1 className="h1"> △ Monsters of Hyrule △</h1>
+      <h3 className="h3"> Select an Image to Learn More </h3>
+      <div className="imgcard">
+        {monsters.data.map((monster) => (
+          <ul key={monster.id}>
+            <p>
+              <b>{monster.name.toUpperCase()}</b>
+            </p>
+            <p>
+              <Link className="imglink" to={`/DetailView/${monster.id}`}>
+                <img className="listimg" src={monster.image}></img>
+              </Link>
+            </p>
+            <hr></hr>
+          </ul>
+        ))}
+      </div>
+      <Link className="homelink" to="/">
+        Back to Home
+      </Link>
     </div>
   );
 }

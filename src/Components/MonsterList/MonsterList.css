@@ -1,0 +1,32 @@
+.imgcard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-shadow: 1px 2px 1px plum;
+}
+
+.homelink:hover {
+  opacity: 50%;
+  text-shadow: 1px 1px 1px black;
+}
+
+.homelink:visited {
+  color: plum;
+  text-shadow: 1px 2px 1px black;
+}
+
+.h1 {
+  text-shadow: 1px 2px 1px plum;
+}
+
+.h3 {
+  text-shadow: 1px 2px 1px plum;
+}
+
+.listimg {
+  border-radius: 5%;
+}
+
+.imglink:hover {
+  opacity: 50%;
+}

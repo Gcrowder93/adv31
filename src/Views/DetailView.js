@@ -6,6 +6,8 @@ import MonsterDetails from '../Components/MonsterDetails/MonsterDetails';
 import { getMonstersById } from '../services/Monsters';
 import { Link } from 'react-router-dom';
 
+import './DetailView.css';
+
 export default function DetailView() {
   const { id } = useParams();
   const [monsters, setMonster] = useState([]);
