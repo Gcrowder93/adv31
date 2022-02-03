@@ -6,8 +6,6 @@ import MonsterDetails from '../Components/MonsterDetails/MonsterDetails';
 import { getMonstersById } from '../services/Monsters';
 import { Link } from 'react-router-dom';
 
-import './DetailView.css';
-
 export default function DetailView() {
   const { id } = useParams();
   const [monsters, setMonster] = useState([]);
@@ -30,8 +28,9 @@ export default function DetailView() {
       <div>
         <MonsterDetails {...{ monsters }} /*handleSubmit={handleSubmit}*/ />
       </div>
-      <Link to="/">Back to Home</Link>
-      {/* <a href="/">Back To Home</a> */}
+      <Link className="homelink" to="/">
+        Back to Home
+      </Link>
     </div>
   );
 }

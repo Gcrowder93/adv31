@@ -1,35 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import './MonsterDetails.css';
 
 export default function MonsterDetails({ monsters }) {
   return (
-    <div>
+    <div className="body">
       <div>
         <header>
           <br></br>
-          <a href="/">Back To Home</a>
+          <Link className="homelink" to="/">
+            Back to Home
+          </Link>
         </header>
-        <h1> -Monster Details-</h1>
-        <ul>
-          <p>
+        <h1 className="h12">
+          <p className="name2">
             <b>{monsters.name.toUpperCase()}</b>
           </p>
+        </h1>
+        <ul>
           <p>
-            <img src={monsters.image}></img>
+            <img className="img2" src={monsters.image}></img>
           </p>
-          <b>Common Locations:</b>
-          <p>{monsters.common_locations[0]}</p>
-          <p>{monsters.common_locations[1]}</p>
-          <p>{monsters.common_locations[2]}</p>
-          <p>{monsters.common_locations[3]}</p>
-          <p>{monsters.common_locations[4]}</p>
-
-          <p>{monsters.description}</p>
-          <b>Possible Loot:</b>
-          <p>
-            {monsters.drops[0]}, {monsters.drops[1]}, {monsters.drops[2]}, {monsters.drops[3]},{' '}
-            {monsters.drops[4]}, {monsters.drops[5]}, {monsters.drops[6]}, {monsters.drops[7]},{' '}
-            {monsters.drops[8]}
-          </p>
+          <div className="details2">
+            <h2 className="h22">
+              <b>Common Locations:</b>
+            </h2>
+            <p>{monsters.common_locations[0]}</p>
+            <p>{monsters.common_locations[1]}</p>
+            <p>{monsters.common_locations[2]}</p>_<p>{monsters.common_locations[3]}</p>
+            <p>{monsters.common_locations[4]}</p>
+            <h2 className="h22">Description:</h2>
+            <p>{monsters.description}</p>
+            <h2 className="h22">
+              <b>Possible Loot:</b>
+            </h2>
+            <p>
+              {monsters.drops[0]}, {monsters.drops[1]}, {monsters.drops[2]}, {monsters.drops[3]},{' '}
+              {monsters.drops[4]}, {monsters.drops[5]},
+            </p>
+          </div>
 
           <hr></hr>
         </ul>

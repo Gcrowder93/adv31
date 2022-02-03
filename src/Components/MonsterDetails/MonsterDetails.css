@@ -1,0 +1,22 @@
+body {
+  background-color: blue;
+}
+
+.img2 {
+  border-radius: 5%;
+}
+
+.h12 {
+  text-shadow: 1px 2px 1px plum;
+  text-decoration: underline;
+  font-family: fantasy;
+}
+
+.h22 {
+  text-decoration: underline goldenrod;
+  font-family: monospace;
+}
+
+.details2 {
+  text-shadow: 1px 1px 1px plum;
+}
