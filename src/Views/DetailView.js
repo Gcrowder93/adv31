@@ -12,6 +12,9 @@ export default function DetailView() {
   const [loading, setLoading] = useState(true);
   //   const history = useHistory();
 
+  // add memory router and initial entry test here
+  // similar to MonsterDetails.test.js
+
   useEffect(() => {
     const fetchData = async () => {
       const monData = await getMonstersById(id);
@@ -26,7 +29,7 @@ export default function DetailView() {
   return (
     <div className="deets">
       <div>
-        <MonsterDetails {...{ monsters }} /*handleSubmit={handleSubmit}*/ />
+        <MonsterDetails {...{ monsters }} />
       </div>
       <Link className="homelink" to="/">
         Back to Home

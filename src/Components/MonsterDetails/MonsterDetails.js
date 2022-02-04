@@ -8,7 +8,6 @@ export default function MonsterDetails({ monsters }) {
     <div className="body">
       <div>
         <header>
-          <br></br>
           <Link className="homelink" to="/MonsterList">
             Back to Monster List
           </Link>
@@ -33,12 +32,10 @@ export default function MonsterDetails({ monsters }) {
               <b>Possible Loot:</b>
             </h2>
             <p>
-              {monsters.drops[0]}, {monsters.drops[1]}, {monsters.drops[2]}, {monsters.drops[3]},{' '}
-              {monsters.drops[4]}, {monsters.drops[5]},
+              {monsters.drops[0]}, {monsters.drops[1]}, {monsters.drops[2]}, {monsters.drops[3]},
+              {monsters.drops[4]},
             </p>
           </div>
-
-          <hr></hr>
         </ul>
       </div>
     </div>

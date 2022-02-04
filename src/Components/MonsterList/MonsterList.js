@@ -7,7 +7,6 @@ export default function MonsterList({ monsters }) {
   return (
     <div className="page">
       <header>
-        <br></br>
         <Link className="homelink" to="/">
           Back to Home
         </Link>
@@ -25,7 +24,6 @@ export default function MonsterList({ monsters }) {
                 <img className="listimg" src={monster.image}></img>
               </Link>
             </p>
-            <hr></hr>
           </ul>
         ))}
       </div>

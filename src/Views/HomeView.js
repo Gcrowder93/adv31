@@ -11,7 +11,6 @@ export default function HomeView() {
       <Link className="monsterhome" to="/MonsterList">
         Monster List
       </Link>
-      <br></br>
       <img src={zelda} className="imghome"></img>
       <h3 className="h3home">Click on an image to learn more about that monster.</h3>
     </div>
