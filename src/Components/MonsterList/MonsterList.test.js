@@ -1,8 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { Route } from 'react-router-dom';
-import { MemoryRouter } from 'react-router-dom';
+import { Route, MemoryRouter } from 'react-router-dom';
 import MonsterList from './MonsterList';
-// import MonsterDetails from '../MonsterDetails/MonsterDetails';
 
 const mockmonsters = {
   data: [

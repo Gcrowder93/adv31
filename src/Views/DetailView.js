@@ -1,10 +1,9 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-// import { useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import MonsterDetails from '../Components/MonsterDetails/MonsterDetails';
 import { getMonstersById } from '../services/Monsters';
-import { Link } from 'react-router-dom';
+
+// import { useHistory } from 'react-router-dom';
 
 export default function DetailView() {
   const { id } = useParams();
@@ -24,7 +23,7 @@ export default function DetailView() {
     fetchData();
   }, [id]);
 
-  if (loading) return <p>Loading..</p>;
+  if (loading) return <p className="loader">Loading..</p>;
 
   return (
     <div className="deets">

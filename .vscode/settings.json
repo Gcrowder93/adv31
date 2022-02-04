@@ -1,3 +1,14 @@
 {
-  "cSpell.words": ["BOTW", "monsterlist"]
+  "cSpell.words": [
+    "BOTW",
+    "detailview",
+    "Ganon",
+    "imgcard",
+    "imglink",
+    "listimg",
+    "monsterdetails",
+    "monsterlist",
+    "Sheikah"
+  ],
+  "cSpell.ignoreWords": ["homelink", "mockmonsters"]
 }

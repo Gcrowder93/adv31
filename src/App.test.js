@@ -17,9 +17,6 @@ test('test monster list goes to monster list', async () => {
     </MemoryRouter>
   );
 
-  const linkElement = screen.getByText(/loading/i);
-  waitForElementToBeRemoved(linkElement);
   const Link = await screen.findByRole('link');
-
   expect(Link).toBeInTheDocument();
 });

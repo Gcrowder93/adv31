@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Route, MemoryRouter } from 'react-router-dom';
-import MonsterDetails from './MonsterDetails';
+import MonsterDetails from '../Components/MonsterDetails/MonsterDetails';
+// import DetailView from './DetailView';
 
 const mockmonsters = {
   category: 'monsters',
@@ -19,10 +20,10 @@ const mockmonsters = {
   image: 'https://botw-compendium.herokuapp.com/api/v2/entry/guardian_turret/image',
   name: 'guardian turret',
 };
-test('Monster Detail Page renders monster details', async () => {
+test('Detail View Page renders specific monster image and details', async () => {
   render(
-    <MemoryRouter initialEntries={['/monsterdetails']}>
-      <Route path="/monsterdetails">
+    <MemoryRouter initialEntries={['/detailview']}>
+      <Route path="/detailview">
         <MonsterDetails monsters={mockmonsters} />
       </Route>
       );
