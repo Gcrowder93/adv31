@@ -31,5 +31,5 @@ test('Detail View Page renders specific monster image and details', async () => 
   );
 
   const image = await screen.findAllByRole('img');
-  expect(image).toHaveLength(1);
+  expect(image).toHaveLength(2);
 });

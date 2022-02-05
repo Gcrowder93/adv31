@@ -17,6 +17,7 @@ export default function HomeView() {
       <img src={zelda} className="imghome"></img>
       <h3 className="h3home">Click on an image to learn more about that monster.</h3>
       <img src={thisone} className="sword"></img>
+      <footer className="foot">Last Updated Feb. 2022</footer>
     </div>
   );
 }
