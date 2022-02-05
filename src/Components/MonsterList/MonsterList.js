@@ -12,7 +12,7 @@ export default function MonsterList({ monsters }) {
         </Link>
       </header>
       <h1 className="h1"> △ Monsters of Hyrule △</h1>
-      <h3 className="h3"> Select an Image to Learn More </h3>
+      <h4 className="h3"> Select an Image to Learn More </h4>
       <div className="imgcard">
         {monsters.data.map((monster) => (
           <ul key={monster.id}>
