@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomeView.css';
 import zelda from './img/zelda.png';
+import thisone from './img/thisone.png';
 
 export default function HomeView() {
   return (
@@ -15,6 +16,7 @@ export default function HomeView() {
       </h3>
       <img src={zelda} className="imghome"></img>
       <h3 className="h3home">Click on an image to learn more about that monster.</h3>
+      <img src={thisone} className="sword"></img>
     </div>
   );
 }

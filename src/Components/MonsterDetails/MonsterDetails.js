@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import thisone from '../../Views/img/thisone.png';
 
 import './MonsterDetails.css';
 
 export default function MonsterDetails({ monsters }) {
   return (
-    <div className="body">
+    <div className="body2">
       <div>
         <header>
-          <Link className="homelink" to="/MonsterList">
+          <Link className="homelink4" to="/MonsterList">
             Back to Monster List
           </Link>
         </header>
@@ -26,25 +27,33 @@ export default function MonsterDetails({ monsters }) {
               <b>Common Locations:</b>
             </h2>
             <ol>
-              <li> {monsters.common_locations[0]} </li>
-              <li> {monsters.common_locations[1]} </li>
-              <li> {monsters.common_locations[2]} </li>
+              {/* need to figure out how to space inbetween the common locations */}
+
+              <li> {monsters.common_locations} </li>
+              {/* <li> {monsters.common_locations[1]} </li> */}
+              {/* <li> {monsters.common_locations[2]} </li> */}
             </ol>
             <h2 className="h22">Description:</h2>
             <p>{monsters.description}</p>
             <h2 className="h22">
               <b>Possible Loot:</b>
             </h2>
-            <ol>
-              <li>
-                {monsters.drops[0]} {monsters.drops[1]}
-              </li>
-            </ol>
             <p>
-              <li>
-                {monsters.drops[2]} {monsters.drops[3]}
-                {monsters.drops[4]}
-              </li>
+              <ol>
+                <li>{monsters.drops[0]}</li>
+                <li>{monsters.drops[1]}</li>
+                <li>{monsters.drops[2]}</li>
+                <li> {monsters.drops[3]}</li>
+                <li>{monsters.drops[4]}</li>
+              </ol>
+            </p>
+            <div>
+              <img src={thisone} className="sword"></img>
+            </div>
+            <p>
+              <Link className="homelink4" to="/">
+                Back to Home
+              </Link>
             </p>
           </div>
         </ol>

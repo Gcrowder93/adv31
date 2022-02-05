@@ -1,9 +1,12 @@
 * {
-  background-color: palevioletred;
+  /* background-color: palevioletred;
+   */
 }
 
 .App {
   text-align: center;
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .App-logo {

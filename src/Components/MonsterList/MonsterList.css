@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  text-shadow: 1px 2px 1px plum;
+  text-shadow: 1px 2px 1px darkred;
   width: 100%;
+}
+.page {
+  background-image: url(https://external-preview.redd.it/9Enzn9tzmnNSRturLNyWm3_auqy74mcRYbbTdxoJqdk.jpg?auto=webp&s=30bcb2ef72e81ed10118dbeed1ba63ec39f5a3f0);
+  color: darkorange;
+  font-size: 17px;
+  text-decoration: 2px underline;
 }
 
 .homelink {
-  color: plum;
+  color: darkorange;
   text-shadow: 1px black;
 }
 
@@ -17,7 +23,7 @@
 }
 
 .homelink:visited {
-  color: plum;
+  color: darkorange;
   text-shadow: 0.5px darkred;
 }
 
@@ -25,13 +31,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   /* padding: 3px; */
-  text-shadow: 1px 2px 1px plum;
+  text-shadow: 1px 2px 1px darkred;
   font-family: fantasy;
   text-align: center;
 }
 
 .h3 {
-  color: plum;
+  color: darkorange;
   text-shadow: 1px 1px 1px darkred;
   text-decoration: underline;
   text-align: center;

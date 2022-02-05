@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import MonsterDetails from '../Components/MonsterDetails/MonsterDetails';
 import { getMonstersById } from '../services/Monsters';
+import thisone from './img/thisone.png';
 
 // import { useHistory } from 'react-router-dom';
 
@@ -30,9 +31,6 @@ export default function DetailView() {
       <div>
         <MonsterDetails {...{ monsters }} />
       </div>
-      <Link className="homelink" to="/">
-        Back to Home
-      </Link>
     </div>
   );
 }

@@ -1,5 +1,17 @@
+.home {
+  background-color: palevioletred;
+  background-size: cover;
+  max-height: 100%;
+}
+
+.sword {
+  width: 60%;
+}
+
 .header {
-  margin-top: 10px;
+  background-color: palevioletred;
+
+  margin-top: 7px;
   text-shadow: 1px 2px 1px plum;
 }
 
@@ -20,6 +32,7 @@
 
 .imghome {
   margin-top: 10px;
+  margin-bottom: 10px;
   height: 400px;
   width: 650px;
 }
