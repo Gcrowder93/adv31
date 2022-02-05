@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import MonsterDetails from '../Components/MonsterDetails/MonsterDetails';
 import { getMonstersById } from '../services/Monsters';
-import thisone from './img/thisone.png';
+// import thisone from './img/thisone.png';
 
 // import { useHistory } from 'react-router-dom';
 
