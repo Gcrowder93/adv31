@@ -3,20 +3,41 @@
 } */
 
 .img2 {
+  flex-direction: row;
+  flex-wrap: wrap;
   border-radius: 5%;
+  text-align: center;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-align: center;
 }
 
 .h12 {
+  flex-direction: row;
+  flex-wrap: wrap;
   text-shadow: 1px 2px 1px plum;
   text-decoration: underline;
   font-family: fantasy;
+  text-align: center;
 }
 
 .h22 {
-  text-decoration: underline goldenrod;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: underline 2px darkred;
   font-family: monospace;
 }
 
 .details2 {
+  flex-direction: row;
+  flex-wrap: wrap;
   text-shadow: 1px 1px 1px plum;
+  text-align: center;
 }

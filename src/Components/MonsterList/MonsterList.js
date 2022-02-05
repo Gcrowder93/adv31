@@ -16,7 +16,7 @@ export default function MonsterList({ monsters }) {
       <div className="imgcard">
         {monsters.data.map((monster) => (
           <ul key={monster.id}>
-            <p>
+            <p className="monstername">
               <b>{monster.name.toUpperCase()}</b>
             </p>
             <p>

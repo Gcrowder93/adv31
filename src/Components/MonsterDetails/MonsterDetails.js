@@ -17,7 +17,7 @@ export default function MonsterDetails({ monsters }) {
             <b>{monsters.name.toUpperCase()}</b>
           </p>
         </h1>
-        <ul>
+        <ol>
           <p>
             <img className="img2" src={monsters.image}></img>
           </p>
@@ -25,18 +25,29 @@ export default function MonsterDetails({ monsters }) {
             <h2 className="h22">
               <b>Common Locations:</b>
             </h2>
-            <p> {monsters.common_locations} </p>
+            <ol>
+              <li> {monsters.common_locations[0]} </li>
+              <li> {monsters.common_locations[1]} </li>
+              <li> {monsters.common_locations[2]} </li>
+            </ol>
             <h2 className="h22">Description:</h2>
             <p>{monsters.description}</p>
             <h2 className="h22">
               <b>Possible Loot:</b>
             </h2>
+            <ol>
+              <li>
+                {monsters.drops[0]} {monsters.drops[1]}
+              </li>
+            </ol>
             <p>
-              {monsters.drops[0]}, {monsters.drops[1]}, {monsters.drops[2]}, {monsters.drops[3]},
-              {monsters.drops[4]},
+              <li>
+                {monsters.drops[2]} {monsters.drops[3]}
+                {monsters.drops[4]}
+              </li>
             </p>
           </div>
-        </ul>
+        </ol>
       </div>
     </div>
   );
