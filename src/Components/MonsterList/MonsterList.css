@@ -12,6 +12,10 @@
   text-decoration: 2px underline;
 }
 
+.searchbar {
+  background: #ff8c00;
+}
+
 .homelink {
   color: darkorange;
   text-shadow: 1px black;

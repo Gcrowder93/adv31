@@ -5,12 +5,12 @@ import { getMonsters } from './services/Monsters';
 import MonsterList from './Components/MonsterList/MonsterList';
 import HomeView from './Views/HomeView';
 import DetailView from './Views/DetailView';
+
 // import Controls from './Components/Controls/Controls';
 
 function App() {
   const [monsters, setMonster] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const [query, setQuery] = useState();
 
   // const filterMonsters = monsters.filter(
   //   (monsters) => monsters.name.toLowerCase().includes(query) || monsters.name.includes(query)

@@ -4,11 +4,14 @@
     "detailview",
     "Ganon",
     "imgcard",
+    "imghome",
     "imglink",
     "listimg",
     "monsterdetails",
+    "monsterhome",
     "monsterlist",
-    "Sheikah"
+    "Sheikah",
+    "thisone"
   ],
   "cSpell.ignoreWords": ["homelink", "mockmonsters"]
 }

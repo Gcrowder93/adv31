@@ -13,6 +13,8 @@ export default function MonsterList({ monsters }) {
       </header>
       <h1 className="h1"> △ Monsters of Hyrule △</h1>
       <h4 className="h3"> Select an Image to Learn More </h4>
+      <input className="searchbar" type="text" placeholder="search for a monster"></input>
+
       <div className="imgcard">
         {monsters.data.map((monster) => (
           <ul key={monster.id}>
@@ -27,6 +29,7 @@ export default function MonsterList({ monsters }) {
           </ul>
         ))}
       </div>
+
       <Link className="homelink" to="/">
         Back to Home
       </Link>
